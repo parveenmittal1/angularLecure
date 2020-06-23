@@ -6,9 +6,10 @@ import {serverComponent} from "./server/server.component";
 import { ServersComponent } from './servers/servers.component';
 import { Practcomp1Component } from './practcomp1/practcomp1.component';
 import {Pract2Component }  from './practcomp2/pract2.component';
+import { PractdatabindingComponent } from './practdatabinding/practdatabinding.component';
 @NgModule({
   declarations: [
-    AppComponent,serverComponent, ServersComponent, Practcomp1Component,Pract2Component
+    AppComponent,serverComponent, ServersComponent, Practcomp1Component,Pract2Component, PractdatabindingComponent
   ],
   imports: [
     BrowserModule,
