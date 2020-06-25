@@ -1,0 +1,20 @@
+<button class="btn-primary
+btn-group-justified
+btn"
+        (click)="toggelDisplay()">
+  Display Details
+</button>
+<!--(click)="showSectrate = !showSectrate">Display Details</button>-->
+
+<p *ngIf="showSectrate">Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit. Commodi corporis cumque cupiditate doloribus ducimus
+  ea error et eum harum illum magni odit possimus quaerat quam,
+  quas quis veritatis vitae voluptatum.</p>
+
+
+<div *ngFor="let button of log; let i=index"
+     [ngStyle]="{backgroundColor: i%2 > 0?'blue':'transparent'}"
+     [ngClass]="{textColor : i%2 > 0}"
+>
+  {{button}}
+</div>
