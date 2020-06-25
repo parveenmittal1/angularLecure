@@ -14,7 +14,13 @@
   class="btn btn-primary"
   [disabled]='addServer'
   (click)="serverCreated()">Add server</button>
-<p>{{ didServerCreated }}</p>
+<!--<p>{{ didServerCreated }}</p>-->
+<p *ngIf="ifServerCreated else noServer">server was created with name ->{{serverName}} </p>
+<ng-template #noServer>
+  <div>
+    <p>server is not created</p>
+  </div>
+</ng-template>
 <app-server></app-server>
 <app-server></app-server>
 
